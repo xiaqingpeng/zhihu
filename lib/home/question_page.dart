@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import '../global_config.dart';
 import 'reply_page.dart';
-import '../global_config.dart';
 
 class QuestionPage extends StatefulWidget {
   @override
@@ -24,6 +23,7 @@ class QuestionPageState extends State<QuestionPage> {
             children: <Widget>[
               new Container(
                 child: new Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
                   children: <Widget>[
                     new Container(
                       child: new FlatButton(onPressed: (){}, child: new Text("物理学"), color: GlobalConfig.searchBackgroundColor),
@@ -41,9 +41,10 @@ class QuestionPageState extends State<QuestionPage> {
                     )
                   ],
                 ),
-                padding: new EdgeInsets.only(left: 16.0, top: 8.0, bottom: 8.0, right: 16.0),
+                padding: new EdgeInsets.only(top: 8.0, bottom: 8.0, ),
                 color: GlobalConfig.cardBackgroundColor,
               ),
+              
               new Container(
                 child: new Text("《三体》里的水滴有可能被制造出来吗?", style: new TextStyle(fontWeight: FontWeight.bold, fontSize: 18.0, height: 1.3, color: GlobalConfig.dark == true ? Colors.white70 : Colors.black)),
                 padding: new EdgeInsets.only(left: 16.0, bottom: 8.0, right: 16.0),
